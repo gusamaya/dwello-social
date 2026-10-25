@@ -8,6 +8,7 @@
   .glow { position:absolute; width:1400px; height:1400px; left:-160px; top:260px; border-radius:50%;
           background:radial-gradient(circle, rgba(47,208,154,.16), rgba(15,34,54,0) 60%); }
   .scene { position:absolute; left:90px; right:90px; top:420px; bottom:420px; display:flex; flex-direction:column; justify-content:center; align-items:stretch; opacity:0; animation-fill-mode:both; animation-play-state:paused; }
+  .scene .house { height:460px; margin-bottom:40px; flex:none; }
   .tag { align-self:flex-start; background:#2fd09a; color:#0f2236; font-weight:800; font-size:34px; letter-spacing:4px; padding:12px 22px; border-radius:8px; }
   h1 { font-family:'Inter Display','Inter',sans-serif; font-weight:900; font-size:120px; line-height:1; letter-spacing:-3px; margin-top:40px; }
   h1 em { font-style:normal; color:#2fd09a; }
@@ -52,11 +53,11 @@
   <div class="brand"><div class="logo"><img src="../brand/logo.png" alt="">Dwello</div><div class="url"><b>Play free</b> @ dwello.com.au</div></div>
   <div class="bar"><i></i></div>
 
-  <div class="scene s1"><div class="tag">CLIFFHANGER</div>
+  <div class="scene s1"><div class="house" data-type="cottage" data-seed="6" data-sign="LEASED"></div><div class="tag">CLIFFHANGER</div>
     <h1>Your first rental is <em>tenanted.</em></h1></div>
-  <div class="scene s2"><h1>Rent covers the loan.<br><em>Easy money.</em></h1>
+  <div class="scene s2"><div class="house" data-type="cottage" data-seed="6" data-sign="LEASED"></div><h1>Rent covers the loan.<br><em>Easy money.</em></h1>
     <div class="sub">Six months, no dramas…</div></div>
-  <div class="scene s3"><h1>Then the rent <span class="gold">stops.</span></h1>
+  <div class="scene s3"><div class="house" data-type="cottage" data-seed="6" data-stamp="RENT OVERDUE"></div><h1>Then the rent <span class="gold">stops.</span></h1>
     <div class="sub">Two months behind. The mortgage is still due.</div></div>
   <div class="scene s4"><h1>What's your <em>move?</em></h1>
     <div class="opts">
@@ -67,4 +68,5 @@
   <div class="scene s5"><h1>Only one saves the <em>deal.</em></h1>
     <div class="cta">Comment A, B or C 👇<span>Then play it free on Dwello.</span></div>
     <div class="site"><b>Play free</b> @ dwello.com.au</div></div>
+<script src="../brand/houses.js"></script>
 </body></html>

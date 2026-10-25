@@ -1,0 +1,46 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<!-- "Your move" with an illustrated house on each choice. Change data-type/data-seed per option. -->
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1080px; height:1350px; font-family:'Inter',sans-serif; background:#0f2236; color:#fff; overflow:hidden; }
+  .wrap { height:100%; padding:80px 70px 70px; display:flex; flex-direction:column; }
+  .tag { align-self:flex-start; font-weight:800; font-size:24px; letter-spacing:3px; padding:10px 18px; border-radius:6px; }
+  h1 { font-family:'Inter Display','Inter',sans-serif; font-weight:900; font-size:96px; line-height:1; letter-spacing:-2px; margin-top:30px; }
+  .sub { font-size:34px; margin-top:20px; font-weight:500; }
+  .row { margin-top:46px; display:grid; grid-template-columns:repeat(3, 1fr); gap:20px; }
+  .opt { border-radius:24px; overflow:hidden; display:flex; flex-direction:column; }
+  .opt .house { height:330px; }
+  h1 em { font-style:normal; }
+  .opt .lbl { padding:18px 20px 22px; display:flex; gap:14px; align-items:flex-start; }
+  .letter { flex:none; width:60px; height:60px; border-radius:14px; font-family:'Inter Display'; font-weight:900; font-size:38px; display:flex; align-items:center; justify-content:center; }
+  .t { font-size:27px; font-weight:800; line-height:1.15; }
+  .d { font-size:22px; margin-top:4px; }
+  .cta { margin-top:auto; border-radius:20px; padding:30px 34px; font-size:36px; font-weight:800; line-height:1.25; }
+  .cta span { display:block; font-size:27px; font-weight:600; opacity:.85; margin-top:4px; }
+  .foot { display:flex; justify-content:space-between; align-items:center; margin-top:34px; font-size:28px; }
+  .logo { font-weight:800; font-size:34px; display:flex; align-items:center; gap:16px; }
+  .logo img { width:72px; height:72px; display:block; }
+  .url { font-size:30px; }
+  .url b { font-weight:800; }
+  .center .row { text-align:left; }
+</style>
+<link rel="stylesheet" href="../brand/themes.css"></head>
+<body class="t-navy">
+<div class="wrap">
+  <div class="tag">YOUR MOVE</div>
+  <h1>You've got <em>$500K.</em><br>Pick one.</h1>
+  <div class="sub">Which one builds the empire fastest?</div>
+  <div class="row">
+    <div class="opt"><div class="house" data-fit="slice" data-type="townhouses" data-seed="4"></div>
+      <div class="lbl"><div class="letter">A</div><div><div class="t">Knock down, build two</div><div class="d">Old house, big block</div></div></div></div>
+    <div class="opt"><div class="house" data-fit="slice" data-type="cottage" data-seed="2"></div>
+      <div class="lbl"><div class="letter">B</div><div><div class="t">Three regional houses</div><div class="d">Rent them all out</div></div></div></div>
+    <div class="opt"><div class="house" data-fit="slice" data-type="units" data-seed="7"></div>
+      <div class="lbl"><div class="letter">C</div><div><div class="t">A block of four units</div><div class="d">Renovate and hold</div></div></div></div>
+  </div>
+  <div class="cta">Comment A, B or C 👇<span>Then play it free and see if you were right.</span></div>
+  <div class="foot"><div class="logo"><img src="../brand/logo.png" alt="">Dwello</div><div class="url"><b>Play free</b> @ dwello.com.au</div></div>
+</div>
+<script src="../brand/houses.js"></script>
+</body></html>
