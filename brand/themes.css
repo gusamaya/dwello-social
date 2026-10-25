@@ -1,0 +1,66 @@
+/* Dwello post themes. Load AFTER a template's own <style>:
+     <link rel="stylesheet" href="../brand/themes.css">
+   and pick a theme + optional layout on <body>, e.g. <body class="t-sun center">.
+   Themes: t-navy (default), t-green, t-sun, t-blush, t-mint.
+   Layouts: (default) left-aligned, "center" = centred headline block (posts only).
+   Rotation rule: never the same theme twice in a row, alternate dark (navy/green) and light (sun/blush/mint) where possible. */
+
+:root, .t-navy {
+  --bg:#0f2236; --fg:#ffffff; --muted:#b9c6d4; --card:#18304a; --card-fg:#ffffff;
+  --accent:#2fd09a; --hot:#f2c230; --hot-fg:#0f2236;
+  --tag-bg:#2fd09a; --tag-fg:#0f2236; --letter-bg:#f2c230; --letter-fg:#0f2236;
+  --cta-bg:#2fd09a; --cta-fg:#0f2236; --sign:#2fd09a; --line:#3a5672; --glow:rgba(47,208,154,.16);
+}
+.t-green {
+  --bg:#0b6b55; --fg:#ffffff; --muted:#cdeee2; --card:#095a47; --card-fg:#ffffff;
+  --accent:#f2c230; --hot:#f2c230; --hot-fg:#0b3d31;
+  --tag-bg:#f2c230; --tag-fg:#0b3d31; --letter-bg:#ffffff; --letter-fg:#0b6b55;
+  --cta-bg:#ffffff; --cta-fg:#0b3d31; --sign:#f2c230; --line:#3f9a82; --glow:rgba(242,194,48,.14);
+}
+.t-sun {
+  --bg:#f2c230; --fg:#10233a; --muted:#4d4421; --card:#fff6d6; --card-fg:#10233a;
+  --accent:#0b6b55; --hot:#c4361b; --hot-fg:#ffffff;
+  --tag-bg:#10233a; --tag-fg:#f2c230; --letter-bg:#10233a; --letter-fg:#f2c230;
+  --cta-bg:#10233a; --cta-fg:#ffffff; --sign:#0b6b55; --line:#c49a1e; --glow:rgba(255,255,255,.30);
+}
+.t-blush {
+  --bg:#fde6dc; --fg:#10233a; --muted:#6e4b40; --card:#ffffff; --card-fg:#10233a;
+  --accent:#d94a2b; --hot:#d94a2b; --hot-fg:#ffffff;
+  --tag-bg:#d94a2b; --tag-fg:#ffffff; --letter-bg:#d94a2b; --letter-fg:#ffffff;
+  --cta-bg:#10233a; --cta-fg:#ffffff; --sign:#d94a2b; --line:#eab7a5; --glow:rgba(217,74,43,.10);
+}
+.t-mint {
+  --bg:#e4f5ee; --fg:#10233a; --muted:#46625a; --card:#ffffff; --card-fg:#10233a;
+  --accent:#0b8a6a; --hot:#d94a2b; --hot-fg:#ffffff;
+  --tag-bg:#10233a; --tag-fg:#2fd09a; --letter-bg:#0b8a6a; --letter-fg:#ffffff;
+  --cta-bg:#0b8a6a; --cta-fg:#ffffff; --sign:#0b8a6a; --line:#a8d8c5; --glow:rgba(11,138,106,.12);
+}
+
+/* component colours, all from the tokens above */
+body { background:var(--bg) !important; color:var(--fg) !important; }
+.tag { background:var(--tag-bg); color:var(--tag-fg); }
+.tag.hot { background:var(--hot); color:var(--hot-fg); }
+h1 em { color:var(--accent); }
+h1 .gold, h1 em.hot { color:var(--hot); }
+.sub, .d { color:var(--muted); }
+.opt { background:var(--card); color:var(--card-fg); }
+.letter { background:var(--letter-bg); color:var(--letter-fg); }
+.cta { background:var(--cta-bg); color:var(--cta-fg); }
+.url, .site { color:var(--muted); }
+.url b, .site b { color:var(--sign); }
+.q { color:var(--accent); }
+.btn { background:var(--card); color:var(--card-fg); }
+.btn.myth { border-color:var(--hot); }
+.btn.fact { border-color:var(--accent); }
+.node { background:var(--card); border-color:var(--line); color:var(--muted); }
+.ladder::before { border-left-color:var(--line); }
+.step.start .node { background:var(--cta-bg); border-color:var(--cta-bg); color:var(--cta-fg); }
+.step.goal .node { background:var(--hot); border-color:var(--hot); color:var(--hot-fg); }
+.glow { background:radial-gradient(circle, var(--glow), transparent 60%); }
+.bar { background:var(--card); }
+.bar i { background:var(--sign); }
+
+/* centred layout variant (feed posts) */
+.center .tag { align-self:center; }
+.center h1, .center .sub, .center .q { text-align:center; }
+.center .cta { text-align:center; }
