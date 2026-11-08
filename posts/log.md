@@ -10,3 +10,6 @@ One line per post: date | format | theme | headline | file
 2026-11-09 | Your move (post) | green + houses | You've got $500K. Pick one. | posts/2026-11-09-pick-one-500k-h.png
 2026-11-11 | Cliffhanger (reel) | sun + houses | Then the rent stops. | posts/2026-11-11-rent-stops-h.mp4
 2026-11-13 | Myth or fact (post) | navy, centred + house | Property always doubles every 10 years. (Myth) | posts/2026-11-13-doubles-myth-h.png
+2026-11-16 | Quick quiz (post) | blush, centred | What does LVR stand for? (Loan to Value Ratio) | posts/2026-11-16-quiz-lvr-t.png
+2026-11-18 | Cliffhanger (reel) | green + houses | Then the valuer comes in short. | posts/2026-11-18-valuer-short-h.mp4
+2026-11-20 | Your move (post) | mint + houses | One tired house. $350K. Your plan? | posts/2026-11-20-tired-house-350k-h.png
